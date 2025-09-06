@@ -1,5 +1,5 @@
 .policy-section {
-  background: #6a86c3;
+  background: #e5fdee;
   padding-top: 70px;
   padding-bottom: 50px;
 
@@ -10,24 +10,24 @@
 }
 
 .policy-main-title {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 900;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
   font-size: 24px;
-  color: #000;
   text-align: center;
-  margin-bottom: 20px;
+  color: #151515;
+  margin-bottom: 30px;
 
   @include media(desktop) {
     font-size: 44px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 }
 
 .policy-title {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 800;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
   font-size: 14px;
-  color: #000;
+  color: #151515;
   margin-bottom: 24px;
 
   @include media(desktop) {
@@ -36,10 +36,10 @@
 }
 
 .policy-subtitle {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 700;
   font-size: 14px;
-  color: #000;
+  color: #151515;
   margin-bottom: 24px;
 
   @include media(desktop) {
@@ -48,10 +48,10 @@
 }
 
 .policy-text {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: #000;
+  color: #151515;
 
   &:not(:last-child) {
     margin-bottom: 24px;
@@ -68,10 +68,10 @@
 }
 
 .policy-item {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: #000;
+  color: #151515;
   margin-bottom: 8px;
 
   &:last-child {

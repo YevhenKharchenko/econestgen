@@ -1,0 +1,164 @@
+.blog-section {
+  @include media(desktop) {
+  }
+}
+
+.blog-bg-wrapper {
+  padding-bottom: 71px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    padding-bottom: 131px;
+    max-width: 1440px;
+  }
+}
+
+.blog-container {
+  padding: 0 24px;
+
+  @include media(desktop) {
+    padding: 0 38px;
+  }
+}
+
+.blog-title {
+  margin-bottom: 10px;
+
+  @include media(desktop) {
+  }
+}
+
+.blog-text {
+  font-family: 'Nunito', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #151515;
+  max-width: 281px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    max-width: 828px;
+    margin-bottom: 50px;
+  }
+}
+
+.blog-controls-wrapper {
+  position: relative;
+}
+
+.blog-swiper-container {
+  max-width: 255px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: max-content;
+  }
+}
+
+.blog-swiper-container.show {
+  visibility: visible;
+}
+
+.blog-swiper-wrapper {
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+  }
+}
+
+.blog-slide {
+  box-shadow: 0 11px 22px 0 rgba(0, 0, 0, 0.14);
+  background: #fff;
+  border-radius: 20px;
+  max-width: 255px;
+  min-height: 332px;
+  display: flex !important;
+  flex-direction: column;
+
+  @include media(desktop) {
+    width: 100% !important;
+    max-width: 428px;
+    min-height: 412px;
+  }
+}
+
+.blog-img {
+}
+
+.blog-slide-text-wrapper {
+  padding: 14px 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 61px;
+
+  @include media(desktop) {
+    padding: 33px 24px;
+    min-height: 120px;
+  }
+}
+
+.blog-slide-text {
+  font-family: 'Nunito', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: rgba(21, 21, 21, 0.8);
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.arrow-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  @include media(desktop) {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover {
+      transform: none;
+    }
+  }
+}

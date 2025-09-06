@@ -1,0 +1,127 @@
+.cookie-banner-section {
+  background: #acc7ff;
+  border-radius: 30px 30px 0 0;
+  padding: 26px 14px;
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: none;
+  z-index: 100;
+  display: none;
+
+  @include media(desktop) {
+    padding: 16px 111px 74px 19px;
+    max-width: 1440px;
+  }
+}
+
+.cookie-banner-wrapper {
+  @include media(desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.cookie-banner-text-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 17px;
+  margin-bottom: 25px;
+
+  @include media(desktop) {
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 0;
+  }
+}
+
+.banner-img {
+  min-width: 76px;
+
+  @include media(desktop) {
+    min-width: 98px;
+  }
+}
+
+.cookie-banner-text {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.04em;
+  color: #212121;
+
+  @include media(desktop) {
+    margin-left: 72px;
+    font-size: 34px;
+    max-width: 796px;
+  }
+}
+
+.cookie-banner-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  @include media(desktop) {
+    gap: 50px;
+    min-width: 352px;
+    position: relative;
+    top: 30px;
+  }
+}
+
+.cookie-accept-btn {
+  background: #3362fa;
+  border: 1px solid #3362fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  padding: 8px 32px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.04em;
+  color: #fff;
+  width: 100%;
+  max-width: 267px;
+
+  @include media(desktop) {
+    padding: 10px 32px;
+    font-size: 24px;
+    max-width: 352px;
+  }
+}
+
+.cookie-decline-btn {
+  border: 2px solid #3362fa;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 32px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.04em;
+  color: #3362fa;
+  width: 100%;
+  max-width: 267px;
+
+  @include media(desktop) {
+    padding: 10px 32px;
+    font-size: 24px;
+    max-width: 352px;
+  }
+}
+
+.show-cookie-banner {
+  display: block;
+}

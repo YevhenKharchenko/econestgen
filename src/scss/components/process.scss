@@ -1,0 +1,29 @@
+.process-section {
+}
+
+.process-bg-wrapper {
+  padding-bottom: 54px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-bottom: 127px;
+    max-width: 1440px;
+  }
+}
+
+.process-text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  max-width: 329px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    font-size: 23px;
+    max-width: 648px;
+  }
+}

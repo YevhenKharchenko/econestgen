@@ -1,0 +1,136 @@
+.footer {
+  padding-top: 36px;
+  padding-bottom: 13px;
+
+  @include media(desktop) {
+    padding-top: 35px;
+    padding-bottom: 33px;
+  }
+}
+
+.footer-container {
+  padding: 0 10px;
+
+  @include media(desktop) {
+    padding: 0 78px;
+  }
+}
+
+.footer-nav {
+  margin-bottom: 20px;
+
+  @include media(desktop) {
+    margin-bottom: 60px;
+  }
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  @include media(desktop) {
+    gap: 22px;
+  }
+}
+
+.footer-list-item {
+  position: relative;
+
+  &:nth-child(1) {
+    &::after {
+      content: '|';
+      position: absolute;
+      right: -8px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      text-align: center;
+      color: #000;
+
+      @include media(desktop) {
+        font-size: 26px;
+        right: -14px;
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    &::after {
+      content: '|';
+      position: absolute;
+      right: -8px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      text-align: center;
+      color: #000;
+
+      @include media(desktop) {
+        font-size: 26px;
+        right: -14px;
+      }
+    }
+  }
+}
+
+.footer-link {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+
+  @include media(desktop) {
+    font-size: 26px;
+  }
+
+  &:hover,
+  &:focus {
+  }
+}
+
+.footer-text-wrapper {
+  @include media(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.footer-text {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: left;
+  color: #000;
+  margin-bottom: 10px;
+
+  @include media(desktop) {
+    font-size: 26px;
+    margin-bottom: 0;
+  }
+}
+
+.footer-email-link {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  color: #000;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  @include media(desktop) {
+    font-size: 26px;
+    align-items: center;
+    transform: translateX(-47px);
+  }
+}

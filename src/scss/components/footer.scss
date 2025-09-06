@@ -1,18 +1,19 @@
 .footer {
-  padding-top: 36px;
-  padding-bottom: 13px;
+  background: rgba(68, 125, 90, 0.1);
+  padding-top: 8px;
+  padding-bottom: 17px;
 
   @include media(desktop) {
-    padding-top: 35px;
-    padding-bottom: 33px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 
 .footer-container {
-  padding: 0 10px;
+  padding: 0 22px;
 
   @include media(desktop) {
-    padding: 0 78px;
+    padding: 0 55px;
   }
 }
 
@@ -20,7 +21,7 @@
   margin-bottom: 20px;
 
   @include media(desktop) {
-    margin-bottom: 60px;
+    margin-bottom: 70px;
   }
 }
 
@@ -43,16 +44,18 @@
       content: '|';
       position: absolute;
       right: -8px;
-      top: 50%;
-      transform: translateY(-50%);
-      font-family: 'Nunito', sans-serif;
-      font-weight: 700;
-      font-size: 14px;
+      bottom: 0;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 10px;
       text-align: center;
-      color: #000;
+      color: #151515;
 
       @include media(desktop) {
-        font-size: 26px;
+        top: 50%;
+        transform: translateY(-50%);
+        bottom: auto;
+        font-size: 24px;
         right: -14px;
       }
     }
@@ -63,16 +66,18 @@
       content: '|';
       position: absolute;
       right: -8px;
-      top: 50%;
-      transform: translateY(-50%);
-      font-family: 'Nunito', sans-serif;
-      font-weight: 700;
-      font-size: 14px;
+      bottom: 0;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 10px;
       text-align: center;
-      color: #000;
+      color: #151515;
 
       @include media(desktop) {
-        font-size: 26px;
+        top: 50%;
+        transform: translateY(-50%);
+        bottom: auto;
+        font-size: 24px;
         right: -14px;
       }
     }
@@ -80,15 +85,15 @@
 }
 
 .footer-link {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 700;
-  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
   text-align: center;
-  color: #000;
+  color: #151515;
   transition: all 0.3s ease-in-out;
 
   @include media(desktop) {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   &:hover,
@@ -105,32 +110,31 @@
 }
 
 .footer-text {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  text-align: left;
-  color: #000;
-  margin-bottom: 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  text-align: center;
+  color: #151515;
+  margin-bottom: 20px;
 
   @include media(desktop) {
-    font-size: 26px;
+    font-size: 24px;
     margin-bottom: 0;
   }
 }
 
 .footer-email-link {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 700;
-  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
   text-align: center;
-  color: #000;
+  color: #151515;
   display: flex;
   justify-content: end;
   align-items: center;
 
   @include media(desktop) {
-    font-size: 26px;
+    font-size: 24px;
     align-items: center;
-    transform: translateX(-47px);
   }
 }

@@ -8,18 +8,11 @@
   padding-bottom: 245px;
   max-width: 375px;
   margin: 0 auto;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../img/hero/hero-bg-mob.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: auto;
 
   @include media(desktop) {
     padding-top: 237px;
     padding-bottom: 359px;
     max-width: 1440px;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url(../img/hero/hero-bg-desk.jpg);
   }
 }
 
